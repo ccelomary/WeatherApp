@@ -38,29 +38,14 @@ const getWeather = ()=>{
         let positionInfo;
         if (position)
         {
-            positionInfo = await (await fetch(`https://www.metaweather.com/api/location/search/?lattlong=${position[0]},${position[1]}`, {
-                headers: {
-                    'Access-Control-Allow-Origin':'*'
-                },
-                mode: 'no-cors'
-            })).json();
+            positionInfo = await (await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${position[0]},${position[1]}`)).json();
             positionInfo = positionInfo[0];
         }
         else {
-            positionInfo = await (await fetch(`https://www.metaweather.com/api/location/search/?query=london`,{
-                headers: {
-                    'Access-Control-Allow-Origin':'*'
-                },
-                mode: 'no-cors'
-            })).json();
+            positionInfo = await (await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=london`)).json();
             positionInfo = positionInfo[0];
         }
-        const data = await (await fetch(`https://www.metaweather.com/api/location/${positionInfo.woeid}/`, {
-            headers: {
-                'Access-Control-Allow-Origin':'*'
-            },
-            mode: 'no-cors'
-        })).json();
+        const data = await (await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${positionInfo.woeid}/`)).json();
         return dispatch({type: GET_WEATHER_BY_LOCATION, data:data});
     };
 }
