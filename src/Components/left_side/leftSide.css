@@ -1,0 +1,14 @@
+
+.left-side {
+    background-color: #1E213A;
+    position: relative;
+    font-weight: 500;
+    height: 1066.48px;
+    width: 30%;
+}
+
+@media screen and (max-width:989px) {
+    .left-side {
+        width: 100%;
+    }
+}

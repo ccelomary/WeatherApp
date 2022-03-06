@@ -1,0 +1,167 @@
+.right-side {
+    width: 70%;
+    background-color: #100E1D;
+    color: #fff;
+    padding: 42px 100px;
+    box-sizing: border-box;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 500;
+}
+
+.degree-sign {
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.fahrenheit {
+    background-color: #585676;
+    font-size: 18px;
+}
+
+.celsius {
+    background-color: #E7E7EB;
+    color: #000;
+}
+
+.weather-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    margin-top: 75px;
+}
+
+
+.highlights-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+    row-gap: 48px;
+}
+
+.highlights {
+    margin-top: 72px;
+}
+
+.highlight-paragraph {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.highlights-card {
+    text-align: center;
+    background-color: #1E213A;
+    padding: 22px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hightlights-card-title {
+    font-size: 16px;
+}
+.hightlights-card-paragraph {
+    margin-top: 6px;
+    font-size: 30px;
+}
+.hightlights-card-paragraph  span{
+    font-size: 64px;
+}
+
+.progress {
+    width: 80%;
+    height: 5px;
+    margin: auto;
+    background-color: #E7E7EB;
+    border-radius: 80px;
+    margin-top: 2px;
+}
+
+.progress::after {
+    display: block;
+    content: '%';
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    color:#A09FB1;
+    font-weight: 700;
+}
+
+.progress-wrapper {
+    height: 100%;
+    width: 90%;
+    background-color: #FFEC65;
+    border-radius: 80px;
+}
+
+.progress-percent {
+    display: flex;
+    width: 80%;
+    color:#A09FB1;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 28px;
+    font-size: 12px;
+}
+
+.wind-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.compas {
+    background-color: #83819c;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 100%;
+    line-height: 1.9;
+    margin-right: 7px;
+    transform: rotate(0deg);
+}
+
+.footer {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 17.17px;
+}
+
+.footer-username {
+    font-weight: bold;
+}
+
+@media screen and (max-width:1024px) {
+    .right-side {
+        padding: 42px 50px;
+    }
+}
+
+@media screen and (max-width:989px) {
+    .right-side {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .weather-info {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 32px;
+    }
+    .highlights-info {
+        grid-template-columns: 1fr;
+    }
+    .right-side {
+        padding: 42px 30px;
+    }
+    .footer {
+        font-size: 14px;
+    }
+}

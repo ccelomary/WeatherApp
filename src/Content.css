@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    min-height: 100vh;
+}
+
+@media screen and (max-width:989px) {
+    .content {
+        display: block;
+    }
+}

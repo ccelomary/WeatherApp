@@ -1,0 +1,24 @@
+.search-location {
+    padding: 23px 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: #E7E7EB;
+    text-transform: capitalize;
+    transition: all .5s ease-in;
+}
+
+.right-row {
+    display: none;
+    transition: all .5s ease-in;
+}
+
+.search-location:hover {
+    border: 1px solid #616475;
+}
+
+.search-location:hover .right-row {
+    display: block;
+}

@@ -1,0 +1,35 @@
+.weather-info-card {
+    padding: 18px 20px;
+    background-color: #1E213A;
+    box-sizing: border-box;
+    width: 120px;
+}
+
+.weather-info-card > * {
+    display: block;    
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: #E7E7EB;
+}
+.weather-info-card img {
+    width: 56.44px;
+    margin-top: 10px;
+    position: relative;
+    left: 10px;
+    margin-bottom: 30px;
+}
+
+.weather-info-card p span:nth-child(1)
+{
+    position: relative;
+    color: #E7E7EB;
+    left: -5px;
+}
+
+.weather-info-card p span:nth-child(2)
+{
+    position: relative;
+    right: -5px;
+    color: #A09FB1;
+}
