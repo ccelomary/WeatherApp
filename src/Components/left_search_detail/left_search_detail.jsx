@@ -14,7 +14,7 @@ const SearchDetail = ({toggle, deactiveToggle, GetWeatherByCity})=>{
         deactiveToggle();
     }
     const searchClickHandler = async ()=>{
-        const data = await (await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${searchInput}`)).json();
+        const data = await (await fetch(`https://weatherbackapp.herokuapp.com/api/location/search/?query=${searchInput}`)).json();
         setSearchLocation(data);
     }
     const searchLocationClick = (woid)=>{
